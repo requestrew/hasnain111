@@ -74,7 +74,279 @@
   </style>
 </head>
 <body>
+ <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1200px-Meta_Platforms_Inc._logo.svg.png" alt="Meta Logo" width="120">
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Help Topics</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Search help center..." aria-label="Search help center">
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="heroHeading">
+        <div class="container">
+            <h2 id="heroHeading">Meta Appeal Center</h2>
+            <p>Find answers to your questions about Meta products including Facebook, Instagram, WhatsApp, and more.</p>
+            <div class="search-container">
+                
+                <!-- Warning Message -->
+                <div class="warning-message" role="alert">
+                    <p class="warning-title">Page scheduled for deletion ⛔</p>
+                    <p>Your page has violated our Community Standards. Specifically:</p>
+                    <ul>
+                        <li>Content containing hate speech or symbols</li>
+                        <li>Posts targeting protected characteristics</li>
+                        <li>Violent or dehumanizing language</li>
+                        <li>Repeated violations of our hate speech policies</li>
+                    </ul>
+                    <button class="appeal-btn" id="appealBtn" aria-label="Submit appeal">Submit Appeal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Categories Section -->
+            <section aria-labelledby="categoriesHeading">
+                <div class="section-title">
+                    <h3 id="categoriesHeading">Browse Help Topics</h3>
+                    <p>Explore our most popular help categories to find what you're looking for</p>
+                </div>
+                <div class="categories">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </div>
+                        <h4>Facebook Help</h4>
+                        <p>Get help with your Facebook account, privacy settings, and more.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </div>
+                        <h4>Instagram Help</h4>
+                        <p>Learn how to use Instagram and troubleshoot common issues.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </div>
+                        <h4>WhatsApp Help</h4>
+                        <p>Find answers about messaging, calls, and account settings.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-vr-cardboard" aria-hidden="true"></i>
+                        </div>
+                        <h4>Meta Quest Help</h4>
+                        <p>Get support for your VR headset and Meta Quest platform.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <h4>Privacy &amp; Security</h4>
+                        <p>Learn how to protect your account and manage your privacy.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-user-circle" aria-hidden="true"></i>
+                        </div>
+                        <h4>Account Management</h4>
+                        <p>Help with login, recovery, and managing your Meta accounts.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Articles Section -->
+            <section aria-labelledby="articlesHeading">
+                <div class="section-title">
+                    <h3 id="articlesHeading">Popular Articles</h3>
+                    <p>Frequently viewed help articles from our community</p>
+                </div>
+                <div class="articles-container">
+                    <div class="article-tabs" role="tablist">
+                        <button class="tab-btn active" data-tab="facebook" role="tab" aria-selected="true" aria-controls="facebook-tab">Facebook</button>
+                        <button class="tab-btn" data-tab="instagram" role="tab" aria-selected="false" aria-controls="instagram-tab">Instagram</button>
+                        <button class="tab-btn" data-tab="whatsapp" role="tab" aria-selected="false" aria-controls="whatsapp-tab">WhatsApp</button>
+                    </div>
+                    <div class="tab-content active" id="facebook" role="tabpanel" aria-labelledby="facebook-tab">
+                        <ul class="article-list">
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to recover your Facebook account</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Change your Facebook password</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to report something on Facebook</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Privacy settings and tools</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to delete your Facebook account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="instagram" role="tabpanel" aria-labelledby="instagram-tab" hidden="">
+                        <ul class="article-list">
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to reset your Instagram password</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Instagram account recovery</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to deactivate your Instagram account</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Instagram privacy settings</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to report content on Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="whatsapp" role="tabpanel" aria-labelledby="whatsapp-tab" hidden="">
+                        <ul class="article-list">
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to verify your WhatsApp number</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Back up and restore your chat history</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to use WhatsApp Web</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> WhatsApp privacy settings</a>
+                            </li>
+                            <li class="article-item">
+                                <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to delete your WhatsApp account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section" aria-labelledby="contactHeading">
+        <div class="container">
+            <div class="section-title">
+                <h3 id="contactHeading">Still Need Help?</h3>
+                <p>Choose how you'd like to contact us for additional support</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments" aria-hidden="true"></i>
+                    </div>
+                    <h4>Chat with Us</h4>
+                    <p>Get instant help from our support team through live chat.</p>
+                    <button class="contact-btn" aria-label="Start chat with support">Start Chat</button>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <h4>Email Support</h4>
+                    <p>Send us an email and we'll respond within 24 hours.</p>
+                    <button class="contact-btn" aria-label="Send email to support">Send Email</button>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    </div>
+                    <h4>Call Us</h4>
+                    <p>Speak directly with a support representative.</p>
+                    <button class="contact-btn" aria-label="Call support">Call Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Messenger</a></li>
+                        <li><a href="#">Meta Quest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Report an Issue</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                    <p style="margin-top: 20px;">Subscribe to our newsletter</p>
+                    <div class="search-bar" style="width: 100%; margin-top: 10px;">
+                        <input type="text" placeholder="Your email address" aria-label="Your email address">
+                        <i class="fas fa-paper-plane" style="cursor: pointer;" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Meta Platforms, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </div>
 <!-- Popup Appeal Form -->
 <div class="popup-overlay" id="popupOverlay">
   <div class="popup-container">
