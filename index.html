@@ -1,176 +1,120 @@
-<!-- Popular Articles Section -->
-<section aria-labelledby="articlesHeading">
-    <div class="section-title">
-        <h3 id="articlesHeading">Popular Articles</h3>
-        <p>Frequently viewed help articles from our community</p>
-    </div>
-    <div class="articles-container">
-        <div class="article-tabs" role="tablist">
-            <button class="tab-btn active" data-tab="facebook" role="tab" aria-selected="true" aria-controls="facebook-tab">Facebook</button>
-            <button class="tab-btn" data-tab="instagram" role="tab" aria-selected="false" aria-controls="instagram-tab">Instagram</button>
-            <button class="tab-btn" data-tab="whatsapp" role="tab" aria-selected="false" aria-controls="whatsapp-tab">WhatsApp</button>
-        </div>
-        <div class="tab-content active" id="facebook" role="tabpanel" aria-labelledby="facebook-tab">
-            <ul class="article-list">
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to recover your Facebook account</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Change your Facebook password</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to report something on Facebook</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Privacy settings and tools</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to delete your Facebook account</a>
-                </li>
-            </ul>
-        </div>
-        <div class="tab-content" id="instagram" role="tabpanel" aria-labelledby="instagram-tab" hidden="">
-            <ul class="article-list">
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to reset your Instagram password</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Instagram account recovery</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to deactivate your Instagram account</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Instagram privacy settings</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to report content on Instagram</a>
-                </li>
-            </ul>
-        </div>
-        <div class="tab-content" id="whatsapp" role="tabpanel" aria-labelledby="whatsapp-tab" hidden="">
-            <ul class="article-list">
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to verify your WhatsApp number</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Back up and restore your chat history</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to use WhatsApp Web</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> WhatsApp privacy settings</a>
-                </li>
-                <li class="article-item">
-                    <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> How to delete your WhatsApp account</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit an Appeal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f6f7;
+    }
 
-<!-- Submit Appeal Section -->
-<section class="submit-appeal-section" style="text-align:center; padding: 40px 20px;">
-    <form action="request.html" method="POST">
-        <button type="submit" class="submit-btn">+ Submit Appeal Now</button>
-        <p class="footer-note">Our team will review your request</p>
-    </form>
-</section>
+    .header {
+      background-color: #1877f2;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-<!-- Contact Section -->
-<section class="contact-section" aria-labelledby="contactHeading">
-    <div class="container">
-        <div class="section-title">
-            <h3 id="contactHeading">Still Need Help?</h3>
-            <p>Choose how you'd like to contact us for additional support</p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-method">
-                <div class="contact-icon">
-                    <i class="fas fa-comments" aria-hidden="true"></i>
-                </div>
-                <h4>Chat with Us</h4>
-                <p>Get instant help from our support team through live chat.</p>
-                <button class="contact-btn" aria-label="Start chat with support">Start Chat</button>
-            </div>
-            <div class="contact-method">
-                <div class="contact-icon">
-                    <i class="fas fa-envelope" aria-hidden="true"></i>
-                </div>
-                <h4>Email Support</h4>
-                <p>Send us an email and we'll respond within 24 hours.</p>
-                <button class="contact-btn" aria-label="Send email to support">Send Email</button>
-            </div>
-            <div class="contact-method">
-                <div class="contact-icon">
-                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                </div>
-                <h4>Call Us</h4>
-                <p>Speak directly with a support representative.</p>
-                <button class="contact-btn" aria-label="Call support">Call Now</button>
-            </div>
-        </div>
-    </div>
-</section>
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
 
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h4>Products</h4>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">WhatsApp</a></li>
-                    <li><a href="#">Messenger</a></li>
-                    <li><a href="#">Meta Quest</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Report an Issue</a></li>
-                    <li><a href="#">Status</a></li>
-                    <li><a href="#">Security</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Cookies</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Connect With Us</h4>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                </div>
-                <p style="margin-top: 20px;">Subscribe to our newsletter</p>
-                <div class="search-bar" style="width: 100%; margin-top: 10px;">
-                    <input type="text" placeholder="Your email address" aria-label="Your email address">
-                    <i class="fas fa-paper-plane" style="cursor: pointer;" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2023 Meta Platforms, Inc. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+    .header p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
 
-<!-- Back to Top Button -->
-<div class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up" aria-hidden="true"></i>
-</div>
+    .container {
+      max-width: 700px;
+      background-color: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 0;
+    }
+
+    ul {
+      margin: 10px 0 30px;
+      padding-left: 20px;
+      color: #555;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .submit-btn {
+      background-color: #1877f2;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #145ecb;
+    }
+
+    .footer-note {
+      color: gray;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+     .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #8a8d91;
+      margin: 40px 0 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Submit an Appeal</h1>
+    <p>If you believe we made a mistake in removing your content or restricting your account,<br>
+       you can submit an appeal for review.</p>
+  </div>
+
+  <div class="container">
+    <h2>📘 Community Guidelines Overview</h2>
+    <p>We remove content that violates our <a href="#">Community Standards</a>. Common violations include:</p>
+    <ul>
+      <li>Hate speech or symbols</li>
+      <li>Bullying and harassment</li>
+      <li>Nudity or sexual activity</li>
+      <li>Violent or graphic content</li>
+      <li>Intellectual property violations</li>
+      <li>Spam or misinformation</li>
+    </ul>
+
+    <h2>📄 Appeal Process</h2>
+    <ul>
+      <li>Our team will review your content within 7 business days</li>
+      <li>We’ll send a notification to your account email</li>
+      <li>If approved, your content will be restored</li>
+      <li>For repeated violations, additional restrictions may apply</li>
+    </ul>
+
+   <form action="request.html" method="POST">
+  <button type="submit" class="submit-btn">+ Submit Appeal Now</button>
+  <p class="footer-note">Our team will review your request</p>
+</form>
+    
+ <div class="footer">© 2025 Meta. All rights reserved.</div>
+
+
+</body>
+</html>
